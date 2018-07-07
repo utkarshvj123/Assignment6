@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>MyMovieOmdb</title>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+<body>
+
+  <div class="main-header">
+    <div class="inner">
+      <h1 class="main-title">IMDB-Movie-Search</h1>
+      <form class="search-form">
+        <label class="is-hidden" for="name">Search a title</label>
+        <input type="text" name="name" id="name" placeholder="Search a Title...">
+		<label class="is-hidden" for="movie-id">Any id</label>
+		<input type="text" name="movie-id" id="movie-id" placeholder="Id Search ...">
+        <label class="is-hidden" for="year">Any Year</label>
+        <input type="text" maxlength="4" name="year" id="year" placeholder="Year">
+        <button type="submit" id="submit" class="search-button"><i class="material-icons icn-search">search</i></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="main-content clearfix">
+    <ul id="movies" class="movie-list">
+
+    <!--Display this placeholder icon if movie Having List-->
+    </ul>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	
+</html>
